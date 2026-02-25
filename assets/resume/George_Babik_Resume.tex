@@ -1,0 +1,195 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape George Babik} \\ \vspace{1pt}
+    \small 514-466-4895 $|$ \href{mailto:gbabik@student.ubc.ca}{\underline{gbabik@student.ubc.ca}} $|$ 
+    \href{https://linkedin.com/in/gbabik}{\underline{linkedin.com/in/gbabik}} $|$
+    \href{https://github.com/georgebabik}{\underline{github.com/georgebabik}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of British Columbia}{Vancouver, BC}
+      {Bachelor of Applied Science in Electrical Engineering \textbf{(4\textsuperscript{th} Year)}}{Sep. 2022 -- May 2027}
+      \resumeItemListStart
+        \resumeItem{\textbf{Courses:} Digital Systems Design (CPEN 311), Computing Systems (CPEN 211), ECE Design Studio (ELEC 291)}
+        \resumeItem{\textbf{Co-op:\hspace{0.3cm}} Available for 12 to 16 months beginning May 2026}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \begin{tabbing}
+        \textbf{Software Tools:} \hspace{0.2cm}\= MATLAB, ModelSim, Quartus Prime 18.1, LTspice, Git, Fusion 360, AutoCAD, LaTeX, \\
+        \> Microsoft Office Suite, Xilinx Vivado, Jupyter Notebook \\[3pt]
+        
+        \textbf{Programming:} \> Verilog/SystemVerilog, ARM/Assembly, C, Python, Tcl \\[3pt]
+        
+        \textbf{Lab Equipment:} \> DE1-SoC (FPGA Board), Multimeter, Oscilloscope, Waveform Generator, Breadboard \\[3pt]
+
+        \textbf{Languages:} \> English, Metropolitan French, Levantine Arabic
+    \end{tabbing}
+    }}
+\end{itemize}
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Wired IP ASIC Design Engineer Co-op}{January 2026 -- Present}
+      {AMD Inc. (Advanced Micro Devices)}{Ottawa, ON}
+      \resumeItemListStart
+        \resumeItem{Supporting wired networking ASIC IP development through FPGA-based emulation, combining RTL refinement with software-driven validation workflows}
+        \resumeItem{Developing software tools to generate test vectors, exercise FPGA interfaces, and capture results over high-performance PCIe links for near–real-time validation}
+        \resumeItem{Collaborating with design and verification teams on simulation debugging, design reviews, and documentation for ASIC, FPGA, and Adaptive SoC platforms}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Digital Design Engineer Co-op}{September 2025 -- December 2025}
+      {Blue Sky Spectroscopy}{Lethbridge, AB}
+      \resumeItemListStart
+        \resumeItem{Designed and automated a multichannel PID temperature control system using a Teensy 4.1 with ADC, DAC, and Lakeshore sensors for cryogenic experiments}
+        \resumeItem{Implemented and evaluated PID autotuning algorithms to achieve millikelvin-level temperature stability across multiple channels}
+        \resumeItem{Built and extended a Python (PySide6) GUI for real-time visualization, CSV logging, and calibration analysis of temperature and power data}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+    {{ARC4 Decryption and Brute-force Cracking Circuit}}{November 2024 -- December 2024}
+    \resumeItemListStart
+      \resumeItem{Developed an ARC4 symmetric stream cipher decryption circuit using a DE1-SoC FPGA board in SystemVerilog, effectively managing multiple on-chip memories and variable latencies via ready-enable interfaces}
+      \resumeItem{Implemented a brute-force cracking extension capable of cycling through the entire ARC4 key space to perform successful message decryption}
+      \resumeItem{Optimized brute-force performance with two parallel decryption units, accelerating the cracking process by 40\%}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {Embedded Neural Network Accelerator}{September 2024 -- October 2024}
+    \resumeItemListStart
+      \resumeItem{Designed a Multi-Layer Perceptron (MLP) hardware accelerator on a DE1-SoC FPGA board in SystemVerilog, integrating an embedded Nios II CPU and off-chip SDRAM using Quartus Prime's Platform Designer}
+      \resumeItem{Implemented RTL modules performing efficient matrix-vector multiplication using Q16.16 fixed-point arithmetic for accurate inference on the MNIST handwritten digit dataset}
+      \resumeItem{Performed extensive debugging through JTAG interfacing and signal-level simulations, optimizing timing constraints and ensuring reliable system operation}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {Real-time Digital Temperature Sensor and Cooling Fan}{May 2024 -- June 2024}
+    \resumeItemListStart
+      \resumeItem{Engineered an Arduino Uno-based temperature sensing system that activated LEDs and controlled motor speed at different temperature thresholds (below 10°C, 35-45°C, and above 45°C)}
+      \resumeItem{Displayed real-time readings on an 8×5 dot matrix LCD with 1-second updates, enabling faster response to environmental changes and improving system adaptability by 20\%}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\end{document}
